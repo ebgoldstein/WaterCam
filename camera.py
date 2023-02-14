@@ -44,16 +44,14 @@ def TFlitePred(img):
     input_index = interpreter.get_input_details()[0]["index"]
     output_index = interpreter.get_output_details()[0]["index"]
     interpreter.set_tensor(input_index, img_exp)
-    print("yes2")
     
     interpreter.invoke()
-    print("yes3")
+
     predictions = interpreter.get_tensor(output_index)
-    print("yes4")
+
     pred_sq = predictions.squeeze()
     pred = np.argmax(pred_sq,-1)
     print(pred)
-    #pred_resized = resize(pred, (512,512), preserve_range=True)
 
     return pred
 
