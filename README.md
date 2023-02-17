@@ -6,7 +6,7 @@
 
 A camera for segmenting water images in the field.
 
-<img src="./assets/FieldTest.jpg" width=100% height=100%/>
+<img src="./assets/FieldTest.jpg" width=60% height=60%/>
 
 
 The device is a Raspberry Pi 4, Hyperpixel display, Camera Module 3, and an on-board ML model that was made with the [RIWA dataset](https://www.kaggle.com/dsv/4289421) and [Segmentation Gym](https://github.com/Doodleverse/segmentation_gym).
