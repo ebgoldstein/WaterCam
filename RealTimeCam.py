@@ -1,4 +1,4 @@
-rom picamera2 import Picamera2, Preview
+from picamera2 import Picamera2, Preview
 from libcamera import controls
 
 from pycoral.utils import edgetpu
