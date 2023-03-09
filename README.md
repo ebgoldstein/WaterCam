@@ -11,7 +11,8 @@ A camera for segmenting water images in the field.
 
 The device is a Raspberry Pi 4, Hyperpixel display, Camera Module 3, and an on-board ML model that was made with the [RIWA dataset](https://www.kaggle.com/dsv/4289421) and [Segmentation Gym](https://github.com/Doodleverse/segmentation_gym).
 
-Each picture takes ~3 seconds to segment and display on screen. Future work is focused on decreasing this latency.
+Using a Google Coral edgeTPU, a 256 x 256 model can run at 3 frames/second.
+Without an accelerator, pictures takes ~3 seconds to segment.
 
 <img src="./assets/pic.jpg" width=50% height=50%/>
 
